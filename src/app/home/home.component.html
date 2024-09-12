@@ -1,0 +1,45 @@
+<app-navbar></app-navbar>
+<div class="container">
+  <section id="home">
+    <div class="text-center my-line">Test and launch your product with confidence</div>
+    <div class="text-center my-para">Ensure your product is bug-free and optimized before launch with out expect QA services</div>
+
+    <div class="text-center toggleWrapper">
+        <label for="switch-1" class="switch">
+            <input type="checkbox" id="switch-1" (click)="handleChange()" />
+            <span class="slider"></span>
+        </label>
+    </div>
+  </section>
+
+    <div class="text-center my-flicke">flicke the toggle</div>
+    <div class="connector">
+      <div class="custom-box">
+        <div class="macbook-window">
+          <div class="macbook-header">
+            <span class="button red"></span>
+            <span class="button yellow"></span>
+            <span class="button green"></span>
+          </div>
+          <div class="macbook-content">
+            <pre>
+              <code>
+                <span>if</span>(!initialClr.equals(newClr)) {{'{'}}  System.out.println(<span style="color: rgb(35, 139, 35);">"Switch color changed to: "</span> + <span [style]="clicked ? 'color: purple': 'color : red'">{{color}}</span>); {{'}'}}
+                <span>else</span> {{'{'}} System.out.println(<span *ngIf="!clicked" style="color: rgb(35, 139, 35);">"Switch color did not change."</span><span *ngIf="clicked" style="color: rgb(35, 139, 35);">"Switch color has changed."</span>); {{'}'}}
+              </code>
+          </pre>
+          </div>
+        </div>
+      </div>
+      <div class="connect"></div>
+      <div class="customised-box">
+    </div>
+  </div>
+<section id="services">
+  <app-services></app-services>
+</section>
+  <app-teams></app-teams>
+  <app-aboutus></app-aboutus>
+  <app-formspage></app-formspage>
+</div>
+

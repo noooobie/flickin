@@ -1,0 +1,69 @@
+nav{
+    background-color: rgb(12, 11, 11) !important;
+    padding: 16px 16px 16px 16px;
+    border-bottom: .5px solid rgba(255, 255, 255, 0.039);
+  }
+
+.navbar-brand{
+    margin-left: 3%;
+}
+
+
+.navbar-light .navbar-toggler-icon {
+    filter: invert(1);
+}
+
+.navbar-nav .nav-link {
+    color: rgba(255, 255, 255, 0.593); /* Force text color to white */
+}
+
+.navbar-nav{
+    width: 25rem;
+}
+
+
+li{
+    padding-left: 5%;
+}
+
+.navbar-toggler{
+    padding: 0.2rem 0.5rem; /* Reduce the padding */
+    font-size: 1rem; /* Reduce the icon size */
+}
+
+
+.navbar-toggler-icon {
+    width: 2.2rem; /* Adjust width of the icon */
+    height: 1.4rem; /* Adjust height of the icon */
+}
+
+.navbar-brand img {
+    width: 120px; /* Increase the width of the logo */
+    height: 40px; /* Increase the height of the logo */
+}
+
+.navbar-nav .nav-item.active a:hover {
+    color: white !important; /* Change this color to your preferred hover color */
+}
+
+
+.navbar-nav .nav-item a:hover {
+    color: white !important; /* Change this color to your preferred hover color */
+}
+
+
+
+  @media (max-width: 991.98px) {
+
+    .navbar-nav .nav-item a{
+        border-bottom: 1px solid rgba(255, 255, 255, 0.088);
+    }
+    .navbar-nav .nav-item.active a{
+        border-bottom: 1px solid rgba(255, 255, 255, 0.088);
+    } 
+
+}
+
+
+  
+  

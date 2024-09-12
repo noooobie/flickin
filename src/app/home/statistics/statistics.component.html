@@ -1,0 +1,18 @@
+<div class="container">
+    <div class="left-section">
+      <div class="text-center my-line-2">
+        <span style="color: blueviolet;">Committed </span>to your Success
+      </div>
+      <p>
+        40 years of experience allow NI to streamline and simplify the test of millions of engineers through reliable solutions. We support your team with unrivaled confidence in the accuracy, precision, and repeatability of your measurements.
+      </p>
+    </div>
+  
+    <div class="right-section">
+      <div class="stat" *ngFor="let stat of statistics; let i = index">
+        <h3>{{ i === 2 ? currentNumber + '%' : stat.value }}</h3>
+        <p>{{ stat.description }}</p>
+        <hr *ngIf="i < statistics.length - 1">
+      </div>
+    </div>
+  </div>

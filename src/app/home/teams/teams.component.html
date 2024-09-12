@@ -1,0 +1,74 @@
+<div class="text-center my-line">Easy and Optimised <span style="color: blueviolet;"> Team Collabration</span></div>
+<div class="collaboration">
+    <div class="text-overlay">
+        <span class="line1">developer</span>
+        <span class="line2"><span style="color: blueviolet;">x</span> flicke</span>
+    </div>
+    <div class="circle developer"></div>
+    <div class="circle tester"></div>
+</div>
+<div class="teamcollab">
+    <h5>Why choose flicke collabration model</h5>
+    <p>Lorem ipsum dolor sit amet, cons adipisicing elit. Autem quas adipisci a accusantium eius ut voluptatibus ad impedit nulla, ipsa qui. Quasi temporibus eos commodi aliquid impedit amet, similique nulla. </p>
+</div>
+
+
+<div class="container">
+    <div class="rounded-rectangle">
+        <h4 style="text-align: start;">Analysis</h4>
+        <p style="text-align: start;">Lorem ipsum dolor sit amet, conipisicing elit eius ut voluptatibus ad impedit commodi aliquid impedit ame. </p>
+    </div>
+    <div class="rounded-rectangle">
+        <h4 style="text-align: start;">Process Maturity</h4>
+        <p style="text-align: start;">Lorem ipsum dolor sit amet, conipisicing elit eius ut voluptatibus ad impedit commodi aliquid impedit ame. </p>
+    </div>
+    <div class="rounded-rectangle">
+        <h4 style="text-align: start;">Transparency</h4>
+        <p style="text-align: start;">Lorem ipsum dolor sit amet, conipisicing elit eius ut voluptatibus ad impedit commodi aliquid impedit ame. </p>
+    </div>
+  </div>
+<!-- <div class="startContainer">
+    <button class="button pulseText">Know Pricing</button>
+</div> -->
+<div class="spacing" id="accordion" role="tablist">
+    <div class="card" *ngFor="let item of items; let i = index">
+      <div class="card-header" role="tab" [id]="'heading' + i">
+        <h5 class="mb-0">
+          <a 
+            [attr.aria-expanded]="expandedItemIndex === i" 
+            (click)="toggleAccordion(i)" 
+            href="javascript:void(0)">
+            {{ item.title }}
+            <!-- Arrow icon for open and collapse -->
+            <span [ngClass]="{'arrow-down': expandedItemIndex !== i, 'arrow-up': expandedItemIndex === i}" class="arrow-icon"></span>
+          </a>
+        </h5>
+      </div>
+      <div 
+        [id]="'collapse' + i" 
+        [ngClass]="{'collapse': true, 'show': expandedItemIndex === i}" 
+        role="tabpanel" 
+        [attr.aria-labelledby]="'heading' + i">
+        <div class="card-body">
+          {{ item.content }}
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="text-center my-line">Checked your <span style="color: blueviolet;"> Website Performance?</span></div>
+
+  <div class="progress-container">
+    <div class="circular-progress-wrapper" *ngFor="let percentage of percentages">
+      <svg width="150" height="150" viewBox="0 0 150 150" class="circular-progress">
+        <circle class="bg"></circle>
+        <circle class="fg" [attr.stroke-dasharray]="getStrokeDashArray(percentage.percent)"></circle>
+        <text x="72" y="74" dy="0em" class="percentage-text">{{ percentage.percent }}%</text>
+      </svg>
+      <h3>{{ percentage.name }}</h3>
+    </div>
+  </div>
+  
+  
+

@@ -1,0 +1,9 @@
+body, html {
+    background-color: rgba(0, 0, 0, 0.772);
+    color: white; /* Optional: This changes the text color to white for better contrast */
+    margin: 0;
+    padding: 0;
+    /* height: 100%; */
+    width: 100%;
+    display: inline-block; 
+  }

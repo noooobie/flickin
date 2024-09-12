@@ -1,0 +1,340 @@
+.container{
+    margin-top: 3rem;
+    width: 80%;
+}
+
+
+pre{
+    margin: 0;
+    padding: 0;
+    display: block;
+    white-space: pre-line;
+}
+
+.my-line{
+    font-size:4rem;
+    line-height:1;
+    width:60%;
+    margin:0 auto;
+    font-weight: 500;
+}
+
+.my-para{
+    font-size:2rem;
+    line-height:1;
+    width:50%;
+    margin:1rem auto 0 auto;
+    font-weight: 100;
+    color: rgba(240, 248, 255, 0.411);
+}
+
+.my-flicke{
+    margin:.7rem auto 0 auto;
+    color: rgba(240, 248, 255, 0.411);
+}
+
+li{
+    padding-left: 5%;
+}
+
+
+/* Toggle Starts Here */
+.switch {
+    width: 60px;
+    height: 35px;
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+  }
+
+.slider {
+    position: absolute;
+    inset: 0;
+    background: rgb(145, 145, 145);
+    border-radius: 25px;
+  }
+  .switch .slider::before {
+    content: "";
+    position: absolute;
+    height: 27px;
+    width: 27px;
+    left: 5px;
+    top: 4px;
+    background: white;
+    transition: 0.5s all;
+    border-radius: 50%;
+  }
+
+  .switch input {
+    display: none;
+  }
+
+  .switch input:checked + .slider {
+    background: rgb(123, 3, 125);
+  }
+
+  .switch input:checked + .slider::before {
+    transform: translateX(23px);
+  }
+
+  .toggleWrapper{
+    margin:1rem auto 0 auto;
+  }
+
+  /* Toggle ends here */
+
+  .custom-box {
+    width: 90%;          /* Width of the box */
+    height: 22em;         /* Height of the box */
+    background-color: #202020;  /* Background color of the box */
+    border: 1px solid #cccccc0e;     /* Border around the box */
+    border-radius: 10px;        /* Rounded corners */
+    padding: 20px;              /* Padding inside the box */
+    margin: 20px auto;          /* Center the box with margin */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a shadow */
+  }
+
+  .customised-box {
+    display: flex;
+    flex-direction: column; /* Vertical layout for mobile view */
+    align-items: center; /* Center children horizontally */
+    position: relative;
+    width: 40%;          /* Width of the box */
+    height: 22em;         /* Height of the box */
+    background-color: #202020;  /* Background color of the box */
+    border: 1px solid #cccccc0e;     /* Border around the box */
+    border-radius: 10px;        /* Rounded corners */
+    padding: 20px;              /* Padding inside the box */
+    margin: 0px auto autso auto;          /* Center the box with margin */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a shadow */
+  }
+
+
+pre {
+    background-color: #f5f5f500;
+    color:#ffffff;
+    overflow: hidden;
+  }
+  
+  code span{
+    color: #d63384;
+  }
+
+
+.connect::before,
+.connect::after {
+  content: '';
+  width: 10px;
+  height: 10px;
+  text-align: center;
+  line-height: 10px;
+  border-radius: 5px;
+  background: rgb(238, 0, 255);
+  margin: 0;
+  display: inline-block;
+  position: absolute;
+  top: -4px;
+}
+
+.connect::before {
+  left: -5px;
+}
+
+.connect::after {
+  right: -5px;
+}
+
+.connect {
+  width: 150px;
+  height: 2px;
+  background: darkGray;
+  position: relative;
+}
+
+body {
+  padding: 100px;
+}
+
+/* Connector Line */
+
+.connector{
+    display: flex;
+    flex-direction: column; /* Arrange children in a column */
+    align-items: center; /* Center children horizontally */
+    /* padding: 100px; */
+}
+
+.custom-box {
+    margin-bottom: 0; /* Remove the space below the custom box */
+    position: relative; /* For relative positioning of pseudo-elements */
+    display: flex; /* Makes the container a flex container */
+    justify-content: center; /* Centers the content horizontally */
+  }
+
+  .connect {
+    width: 2px;
+    height: 40px;
+    background: darkGray;
+    position: relative;
+  }
+  
+  /* Adjust positioning of circles */
+  .connect::before,
+  .connect::after {
+    content: '';
+    width: 10px;
+    height: px;
+    text-align: center;
+    line-height: 10px;
+    border-radius: 5px;
+    background: rgba(238, 0, 255, 0.635);
+    margin: 0;
+    display: inline-block;
+    position: absolute;
+    left: -4px;
+  }
+  
+  .connect::before {
+    top: -5px; /* Position at the top of the connect line */
+  }
+  
+  .connect::after {
+    bottom: -5px; /* Position at the bottom of the connect line */
+  }
+
+  .macbook-window {
+    width: 100%; /* Takes the full width of the parent div */
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    background-color: rgba(255, 255, 255, 0);
+    border: 1px solid #dddddd8a;
+    overflow: hidden;
+  }
+  
+  .macbook-header {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #09090979;
+    border-bottom: 1px solid #dddddd8a;
+  }
+  
+  .button {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-right: 8px;
+  }
+  
+  .red {
+    background-color: #ff5e566e;
+  }
+  
+  .yellow {
+    background-color: #ffbd2e77;
+  }
+  
+  .green {
+    background-color: #27c93f88;
+  }
+  
+  .macbook-content {
+    padding: 5px 20px 20px 20px;
+  }
+
+  @media (max-width: 1200.98px) {
+
+    .container{
+        margin-top: 2rem;
+        width: 100%;
+    }
+
+  }
+
+  @media (max-width: 991.98px) {
+
+    .container{
+        margin-top: 2rem;
+        width: 100%;
+    }
+
+
+    .my-line{
+        font-size:1.8rem;
+        width:90%;
+        line-height: 2.2rem;
+    }
+
+    .my-para{
+        font-size:1.3rem;
+        width:70%;
+        line-height: 1.6rem;
+    }
+
+    .my-flicke{
+        font-size:.8rem;
+        width:50%;
+        font-weight: 500;
+        line-height: 1.6rem;
+    }
+    
+    .box-group {
+        display: flex;
+        flex-direction: column; /* Vertical layout for mobile view */
+        align-items: center; /* Center children horizontally */
+        width: 100%;
+        position: relative;
+      }
+
+    .custom-box{
+        height: 20em;
+    }
+
+    .customised-box {
+        width: 90%;
+        height: 19em;
+    }
+
+}
+
+section {
+  padding-top: 80px; /* Adjust this value based on your navbar height */
+  margin-top: -80px; /* Offset to adjust for the fixed navbar */
+}
+
+
+@media (min-width: 768px) {
+    .connector{
+        flex-direction: row !important; /* Switch to horizontal layout for desktop */
+        justify-content: space-between !important; /* Space out items evenly */
+        padding: 10px;
+        margin: auto 3rem !important;
+    }
+
+    .customised-box{
+        flex-direction: row !important; /* Keeps individual box-groups vertical */
+        align-items: center !important; /* Center items within each group */
+    }
+
+    
+    .connect {
+        width: 100px !important; /* Make the connector horizontal */
+        height: 2px !important; /* Adjust height to 2px for horizontal line */
+        margin: 0  !important; /* Adjust margin for horizontal alignment */
+      }
+    
+      .connect::before {
+        top: -4px !important; /* Align horizontally */
+        left: -5px !important; /* Position circle to the left of the line */
+      }
+    
+      .connect::after {
+        top: -4px !important; /* Align horizontally */
+        right: -5px !important;  /* Position circle to the right of the line */
+      }
+
+}
+  
+  

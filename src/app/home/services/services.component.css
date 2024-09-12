@@ -1,0 +1,269 @@
+.my-line{
+    font-size:4rem;
+    line-height:1;
+    width:60%;
+    margin:2rem auto;
+    font-weight: 500;
+}
+
+/* 
+.data-icon {
+    border: 1px solid rgb(60, 188, 184);
+    width: 1.7rem;
+    height: auto;
+    border-radius: 90%;
+    padding-left: 5px;
+    color: aquamarine;
+} */
+
+.applyFlex {
+    display: flex; /* Use Flexbox for layout */
+    align-items: center; /* Center items vertically */
+    margin-bottom: 2rem;
+    gap: 5em;
+}
+
+/* Base styles for .infoClass to give it some width */
+.infoClass {
+    flex: 0 0 33.33%;; /* Prevent it from growing or shrinking */
+    width: 100px; /* Adjust width as needed */
+    height: 19em; /* Adjust height as needed */
+    background-color: lightgray; /* Just for visibility */
+    background-color: #1e1e1ebe;
+    border-radius: 9px;
+}
+
+/* Styles for the text to control spacing */
+.applyFlex > :last-child {
+    margin-left: 1px; /* Adjust spacing between .infoClass and text */
+}
+
+.applyFlex {
+    display: flex; /* Use Flexbox for layout */
+    align-items: center; /* Center items vertically */
+    width:95%;
+    align-items: flex-start; /* Align items to the top */
+}
+
+.tab-content{
+    margin-left: 5rem !important;
+}
+
+
+/* 
+.infoClass {
+    background-color: #1e1e1ebe;
+    height: 10rem;
+    border-radius: 9px;
+} */
+
+
+@media (max-width: 991.98px) {
+
+    .my-line{
+        font-size:1.8rem;
+        margin-top: 1.2rem !important;
+        width:90%;
+        line-height: 2.2rem;
+    }
+    
+}
+
+.tabs {
+    position: relative;
+    background: rgba(49, 49, 49, 0.445);
+    padding-top:2px;
+    /* padding: 0px;
+    padding-bottom: 0px; */
+    width: 90%;
+    /* height: 250px; */
+    margin: 0 auto;
+    margin-bottom: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  }
+  
+  /* Hide the radio buttons */
+  .tabs input[name="tab-control"] {
+    display: none;
+  }
+  
+  .tabs ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    justify-content: center; /* Center list items horizontally */
+}
+
+.tabs ul li {
+    flex: 1;
+    text-align: center; /* Center text and inline elements horizontally */
+}
+
+.tabs ul li label {
+    cursor: pointer;
+    padding: 5px;
+    transition: all 0.3s ease-in-out;
+    color: #999;
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem; /* Reduced gap between SVG and label */
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center the label content horizontally */
+}
+
+.tabs ul li label svg {
+    fill: #999;
+    width: 24px;
+    height: 24px;
+    margin-bottom: 0; /* Adjust if needed to align vertically */
+}
+  
+  /* Active tab styles */
+  .tabs input#tab1:checked ~ ul li:nth-child(1) label,
+  .tabs input#tab2:checked ~ ul li:nth-child(2) label,
+  .tabs input#tab3:checked ~ ul li:nth-child(3) label,
+  .tabs input#tab4:checked ~ ul li:nth-child(4) label {
+    color: blueviolet;
+  }
+  
+  .tabs input#tab1:checked ~ ul li:nth-child(1) label svg,
+  .tabs input#tab2:checked ~ ul li:nth-child(2) label svg,
+  .tabs input#tab3:checked ~ ul li:nth-child(3) label svg,
+  .tabs input#tab4:checked ~ ul li:nth-child(4) label svg {
+    fill: blueviolet;
+  }
+  
+  /* Position the slider directly below the tabs */
+  .tabs .slider {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 4px;
+    width: 22%;
+    background: blueviolet;
+    transition: all 0.3s ease;
+    top: 94%; /* Position the slider just below the tab labels */
+    border-radius: 10px;
+  }
+  
+  .tabs input#tab1:checked ~ .slider {
+    left: 0%;
+  }
+  
+  .tabs input#tab2:checked ~ .slider {
+    left: 25%;
+  }
+  
+  .tabs input#tab3:checked ~ .slider {
+    left: 50%;
+  }
+  
+  .tabs input#tab4:checked ~ .slider {
+    left: 75%;
+  }
+
+  /* .content{
+    margin: 4rem;
+  } */
+
+  li{
+    margin-top: .5rem;
+  }
+
+  p{
+    margin-bottom: 0px !important;
+  }
+  
+  
+  
+  /* .content div {
+    display: none;
+  }
+  
+  .tabs input#tab1:checked ~ .content div:nth-of-type(1),
+  .tabs input#tab2:checked ~ .content div:nth-of-type(2),
+  .tabs input#tab3:checked ~ .content div:nth-of-type(3),
+  .tabs input#tab4:checked ~ .content div:nth-of-type(4) {
+    display: block;
+  } */
+  
+  .tab-content {
+    display: none;
+  }
+
+  #content1{
+    display: block;
+  }
+
+  a{
+    color: rgba(137, 43, 226, 0.645)
+}
+
+
+  @media (max-width: 600px) {
+    .tabs ul li label span {
+      display: none;
+    }
+
+    .responsive-paragraph {
+      -webkit-line-clamp: unset; /* Removes line clamp on desktop */
+      -webkit-line-clamp: 7 !important; /* Adjust the number for desired lines */
+      overflow: hidden;
+    }
+
+    .tabs {
+        padding-top: 20px;
+        width: 90%;
+      }
+
+    .applyFlex {
+        margin-top: 20px !important;
+        flex-direction: column; /* Stack items vertically on mobile */
+        align-items: flex-start; /* Align items to the start of the container */
+        gap: 1em !important;
+    }
+
+    .applyFlex > :last-child {
+        margin-left: 0; /* Remove left margin in vertical layout */
+        margin-top: 10px; /* Add top margin in vertical layout */
+    }
+    .infoClass {
+        flex: 0 0 auto !important; /* Takes full width on mobile */
+        width: 104%; /* Ensure it takes the full width */ 
+        height: 14em;
+    }
+
+    p,h2{
+        margin-left: 4px !important;
+    }
+
+    
+    label{
+        padding: 0 !important;
+        margin-bottom: 0 !important;
+        flex-direction: column !important;
+        gap:0rem !important;
+    }
+
+    .content{
+        margin: 1rem;
+      }
+
+      li{
+        margin-top: 0rem;
+      }
+
+      .tab-content{
+        margin-left: 0rem !important;
+    }
+  }
+  
+  .responsive-paragraph {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 10; /* Adjust the number for desired lines */
+    overflow: hidden;
+  }
+  

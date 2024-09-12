@@ -1,0 +1,142 @@
+.my-line{
+    font-size:4rem;
+    line-height:1;
+    width:60%;
+    margin:2rem auto;
+    font-weight: 500;
+}
+
+.position{
+  display: flex;
+  flex-direction: column; /* Ensure content stacks vertically */
+  align-items: center; /* Center horizontally */
+  justify-content: center;
+  width: 60%;
+  margin: 1rem auto;
+}
+
+.collapsible {
+  background-color: #77777739;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  border-radius: 4px;
+  margin-bottom: 5px;
+}
+
+.collapsible:after {
+  content: '\02795'; /* Unicode character for "plus" sign (+) */
+  font-size: 13px;
+  color: rgb(255, 255, 255);
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+
+.active, .collapsible:hover {
+  background-color: #555;
+}
+
+.content {
+  padding: 0 18px;
+  overflow: hidden;
+  max-height: 0;
+  background-color: #f1f1f13d;
+  transition: max-height 0.5s ease-out;
+}
+
+@media (max-width: 991.98px) {
+
+    .my-line{
+        font-size:1.8rem;
+        margin: 1rem auto;
+        width:80%;
+        line-height: 2.2rem;
+    }
+
+    .position{
+      width: 92%;
+      margin: auto 1rem;
+    }
+
+    .step-content h3 {
+      font-size: 18px;
+    }
+    
+    .step-content p {
+      font-size: 14px;
+    }
+
+    .step {
+      width: 95% !important;
+    }
+
+    .testing-process {
+      padding: 3px !important;
+    }
+    
+}
+
+.testing-process {
+  padding: 20px;
+  font-family: 'Arial', sans-serif;
+}
+
+h2 {
+  color: #274a7e;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.step {
+  display: flex;
+  align-items: flex-start;
+  margin: 2rem auto;
+  width: 60%;
+  position: relative;
+  opacity: 0.3;
+  padding-left: 50px;
+}
+
+.step.visible {
+  opacity: 1; /* Full opacity when visible */
+}
+
+.step-number {
+  position: absolute;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  background-color: white;
+  border: 2px solid #274a7e;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  color: #274a7e;
+}
+
+.step-content h3 {
+  margin: 0;
+  font-size: 18px;
+  color: #ffffff;
+}
+
+.step-content p {
+  margin: 5px 0 0 0;
+  font-size: 14px;
+  color: #bdbdbd;
+}
+
+.step-content strong {
+  font-weight: bold;
+}

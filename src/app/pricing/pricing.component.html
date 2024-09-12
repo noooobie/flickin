@@ -1,0 +1,28 @@
+<app-navbar></app-navbar>
+<div class="container">
+    <div class="text-center my-line"><span style="color: blueviolet;">Consult your Product</span> with our Experienced Team</div>
+    <div class="position"> 
+        <div *ngFor="let section of sections">
+          <button type="button" class="collapsible" (click)="toggleSection(section)">
+            {{section.title}}
+          </button>
+          <div class="content" [style.maxHeight]="section.isOpen ? section.maxHeight : '0'">
+            <p>{{section.content}}</p>
+          </div>
+        </div>
+    </div>
+
+    <div class="testing-process">
+      <div class="text-center my-line"><span style="color: blueviolet;">How we</span> Test Your Product</div>
+      <div class="step" *ngFor="let step of steps; let i = index" [ngClass]="{'visible': isVisible[i]}">
+        <div class="step-number">{{ step.number }}</div>
+        <div class="step-content">
+          <h3>{{ step.title }}</h3>
+          <p>{{ step.description }}</p>
+        </div>
+      </div>
+    </div>
+</div>
+<app-formspage></app-formspage>
+
+<div style="height: 1vh;"></div>
